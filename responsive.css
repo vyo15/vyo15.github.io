@@ -1,0 +1,367 @@
+@media screen and (max-width: 1000px){
+
+    p{
+        font-size: .9rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-3{
+        gap: 1rem;
+    }
+
+    .grid-2{
+        gap: 1rem;
+    }
+
+    .skills-right ul li{
+        font-size: 0.9rem;
+
+    }
+}
+
+@media screen and (max-width: 825px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .burger{
+    display: block;
+    }
+   
+
+    /* navigator */
+    nav{
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        border-left: 1px solid white;
+        z-index: 9;
+        transform: translateX(100%);
+        transition: .3s ease-in-out;
+        background: whitesmoke;
+    }
+
+    nav ul li{
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-active{
+        transform: translateX(0);
+    }
+
+    :root{
+        padding: 3rem 0;
+    }
+
+    .section-title{
+        font-size: 1.6rem;
+        margin: 0.6rem 0 2.5rem;
+    }
+
+    .pre-title{
+        font-size: .8rem;
+    }
+
+    /* Hero Section */
+
+    #hero{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .hero-right{
+        order: -1;
+        text-align: center;
+    }
+
+    .hero-right img{
+        width: 50%;
+        padding-left: 10rem;
+    }
+
+    .hero-left{
+        padding-right: 30rem;
+        text-align: center;
+        padding-bottom: 5rem;
+        margin-top: -5rem;
+    }
+
+    .hero-left .pre-title{
+        margin: 0 auto;
+    }
+
+    .hero-name{
+        font-size: 2.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+
+    /* Service section */
+    .grid-3{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .services p{
+        margin-bottom: -2rem;
+    }
+
+
+    /* Portopolio */
+
+    .portofolio{
+    grid-template-columns: 250px 250px;
+    gap: 3rem;
+    }
+    
+    /* Skills section */
+
+    .skills-right p{
+        line-height: -1rem;
+        padding: 0 -1rem;
+        font-size: 0.9rem;
+        width: 590px;
+        text-align: justify;
+    }
+
+
+    .skills-grid{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .skills-list{
+        width: 550px;
+
+    }
+
+    .skills-list ul{
+    }
+
+    /* Contact */
+
+    .grid-2{
+    grid-template-columns: repeat(auto-fit, minmax( 250px));
+    }
+
+    /* Footer */
+    padding: 2rem 0;
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root{
+        padding: 3rem 0;
+    }
+    .burger{
+    display: block;
+    }
+
+
+
+    header{
+        background-color: rgb(255, 254, 254);
+    }
+
+    .pre-title{
+        font-size: 0.7rem;
+    }
+
+    /* Hero Section */
+
+    #hero{
+        grid-template-columns: 1fr;
+        
+    }
+    .hero-right img{
+        width: 28%;
+        padding-left: 50px;
+    }
+
+    .hero-left{
+        padding-top: 50px;
+        padding-right: 50rem;
+        text-align: center;
+    }
+
+    .hero-left .pre-title{
+        margin-left: 100px;
+    }
+
+    .hero-name{
+        padding-top: 2rem;
+        padding-right: 40px;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-left p{
+        align-items: center;
+        width: 23rem;
+        font-size: .9rem;
+    }
+
+
+    /* Service section */
+
+    #services{
+        padding: 1rem;
+    }
+
+    .services p{
+        margin-bottom: -5rem;
+    }
+
+
+/* Portopolio */
+
+    #portofolio {
+    margin-top: 50px;
+    padding: 1rem;
+    background-color: white;
+   
+   }
+   
+   .grid-3{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    }
+
+
+   .grid-3 .portofolio {
+       border-radius: 1rem;
+       overflow: hidden;
+       width: 20rem;
+       border: 1px solid rgb(231, 231, 231);
+       background-color: rgb(252, 252, 252);
+   }
+   
+   .portofolio-cover {
+       height: 200px;
+   }
+   
+   .portofolio-cover img{
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+   }
+   
+   .portofolio-info {
+       padding: 1rem 1rem;
+   }
+      
+    
+/* Skill & Education */
+
+#skills {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    padding: 1rem;
+    background-color: white;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+
+.education-info p {
+    margin: .1rem 0 1rem;
+}
+
+
+.skills-list {
+    margin-top: 0.9rem;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    margin-left: 1rem;
+}
+
+.skills-right ul {
+    line-height: 1.5rem;
+    padding: 0 0.1rem;
+}
+
+.skills-right p{
+    line-height: -10rem;
+    padding: 0 -1rem;
+    font-size: 0.9rem;
+    width: 310px;
+    text-align: justify;
+}
+
+/* Contact */
+
+#contact{
+    padding: 1rem;
+}
+
+
+.grid-2{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+.contact{
+    background-color: rgb(255, 255, 255);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 4rem;
+}
+
+.contact p{
+    margin-bottom: -50px;
+    padding: .1rem;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.contact-icon{
+    width: max-content;
+    margin-top: -50px;
+    margin-bottom: -10px;
+    padding: 1rem;
+}
+
+/* footer */
+
+footer{
+    width: auto;
+    height: 1rem;
+    padding: 4rem 0;
+    background-color: rgb(255, 254, 254);
+    text-align: center;
+
+}
+
+.footer-icon{
+    margin-bottom: 1rem;
+}
+
+.footer-icon a{
+    margin: 0 0.5rem;
+    
+}
+
+
+}
